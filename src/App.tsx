@@ -7,6 +7,9 @@ import {DeleteCustomer} from "./pages/DeleteCustomer";
 import {RootLayout} from "./components/RootLayout";
 import {store} from "./store/store";
 import {Provider} from "react-redux";
+import {DeleteItem} from "./pages/item/DeleteItem.tsx";
+import {AddItem} from "./pages/item/AddItem.tsx";
+import {UpdateItem} from "./pages/item/UpdateItem.tsx";
 function App() {
 
   const routes = createBrowserRouter([
@@ -17,7 +20,11 @@ function App() {
         { path : '', element : <Dashboard/>},
         { path : '/add', element : <AddCustomer/>},
         { path : '/delete', element : <DeleteCustomer/>},
-        { path : '/update', element : <UpdateCustomer/>}
+        { path : '/update', element : <UpdateCustomer/>},
+
+        { path : '/addItem', element : <AddItem/>},
+        { path : '/deleteItem', element : <DeleteItem/>},
+        { path : '/updateItem', element : <UpdateItem/>}
       ]
     },
   ])
