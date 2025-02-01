@@ -5,8 +5,8 @@ export function Modal(props) {
                 // Delete modal
                 <input
                     type="text"
-                    placeholder={props.deletePlaceholder || "Enter description"}
-                    onChange={(e) => props.setDescription(e.target.value)} // Set description for deletion
+                    placeholder={props.deletePlaceholder || "Enter description or email"}
+                    onChange={(e) => props.setDescription(e.target.value)}
                 />
             ) : (
                 // Create/Update modal
