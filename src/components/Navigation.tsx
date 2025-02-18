@@ -7,7 +7,12 @@ export function Navigation() {
             <header>
                 <nav>
                     <ul>
-                        <Link to='/'>Dashboard</Link>
+                        <div>
+                            <Link to='/' className="nav-link">Dashboard</Link>
+                            <Link to='/add' className="nav-link">Customer</Link>
+                            {/*going to add customer page*/}
+                            <Link to='/addItem' className="nav-link">Item</Link>
+                        </div>
                         <br></br>
                         <br></br>
                         <Link to='/add'>Add Customer &nbsp;</Link>

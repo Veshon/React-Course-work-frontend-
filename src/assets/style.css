@@ -1,0 +1,10 @@
+.nav-link{
+    color: white !important;
+    position: relative;
+    top: -250px;
+    bottom: 0px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    margin-right: 10px;
+}
