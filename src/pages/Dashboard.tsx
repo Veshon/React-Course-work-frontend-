@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { getCustomers } from "../reducers/CustomerReducer.ts";
 import { getItems } from "../reducers/ItemReducer.ts";
 import { Item } from "../models/Item.ts";
+import "../assets/style.css"; // Import the custom CSS file
 
 export function Dashboard() {
     const dispatch = useDispatch<AppDispatch>();
@@ -25,31 +26,31 @@ export function Dashboard() {
     }, [dispatch, items.length]);
 
     return (
-        <div className="min-h-screen bg-gray-100">
+        <div className="dashboard">
             {/* Header */}
-            <header className="bg-indigo-600 text-white text-3xl font-bold p-6">
+            <header className="header">
                 <h1>Dashboard</h1>
             </header>
 
-            <main className="p-6">
+            <main className="main">
                 {/* Customers Section */}
-                <section className="mb-8">
-                    <h2 className="text-2xl font-semibold text-gray-800 mb-4">Customers</h2>
-                    <div className="overflow-x-auto bg-white shadow-md rounded-lg">
-                        <table className="min-w-full table-auto">
-                            <thead className="bg-gray-200">
+                <section className="section">
+                    <h2 className="section-title">Customers</h2>
+                    <div className="table-container">
+                        <table className="table">
+                            <thead className="table-header">
                             <tr>
-                                <th className="px-6 py-3 text-left text-sm font-medium text-gray-600">Name</th>
-                                <th className="px-6 py-3 text-left text-sm font-medium text-gray-600">Email</th>
-                                <th className="px-6 py-3 text-left text-sm font-medium text-gray-600">Phone</th>
+                                <th className="table-header-cell">Name</th>
+                                <th className="table-header-cell">Email</th>
+                                <th className="table-header-cell">Phone</th>
                             </tr>
                             </thead>
                             <tbody>
                             {customers.map((customer: Customer) => (
-                                <tr key={customer.email} className="border-b">
-                                    <td className="px-6 py-4 text-sm text-gray-800">{customer.name}</td>
-                                    <td className="px-6 py-4 text-sm text-gray-800">{customer.email}</td>
-                                    <td className="px-6 py-4 text-sm text-gray-800">{customer.phone}</td>
+                                <tr key={customer.email} className="table-row">
+                                    <td className="table-cell">{customer.name}</td>
+                                    <td className="table-cell">{customer.email}</td>
+                                    <td className="table-cell">{customer.phone}</td>
                                 </tr>
                             ))}
                             </tbody>
@@ -58,23 +59,23 @@ export function Dashboard() {
                 </section>
 
                 {/* Items Section */}
-                <section>
-                    <h2 className="text-2xl font-semibold text-gray-800 mb-4">Items</h2>
-                    <div className="overflow-x-auto bg-white shadow-md rounded-lg">
-                        <table className="min-w-full table-auto">
-                            <thead className="bg-gray-200">
+                <section className="section">
+                    <h2 className="section-title">Items</h2>
+                    <div className="table-container">
+                        <table className="table">
+                            <thead className="table-header">
                             <tr>
-                                <th className="px-6 py-3 text-left text-sm font-medium text-gray-600">Description</th>
-                                <th className="px-6 py-3 text-left text-sm font-medium text-gray-600">Price</th>
-                                <th className="px-6 py-3 text-left text-sm font-medium text-gray-600">Quantity</th>
+                                <th className="table-header-cell">Description</th>
+                                <th className="table-header-cell">Price</th>
+                                <th className="table-header-cell">Quantity</th>
                             </tr>
                             </thead>
                             <tbody>
                             {items.map((item: Item) => (
-                                <tr key={item.description} className="border-b">
-                                    <td className="px-6 py-4 text-sm text-gray-800">{item.description}</td>
-                                    <td className="px-6 py-4 text-sm text-gray-800">${item.price}</td>
-                                    <td className="px-6 py-4 text-sm text-gray-800">{item.qty}</td>
+                                <tr key={item.description} className="table-row">
+                                    <td className="table-cell">{item.description}</td>
+                                    <td className="table-cell">${item.price}</td>
+                                    <td className="table-cell">{item.qty}</td>
                                 </tr>
                             ))}
                             </tbody>
