@@ -3,7 +3,7 @@ import { useState } from "react";
 import { AppDispatch } from "../store/store.tsx";
 import { useDispatch } from "react-redux";
 import { updateCustomer } from "../reducers/CustomerReducer.ts";
-import "../assets/uodateCustomer.css"; // Import CSS for styling
+import "../assets/updateCustomer.css"; // Import CSS for styling
 
 export function UpdateCustomer() {
     const navigate = useNavigate();
