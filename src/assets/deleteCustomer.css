@@ -21,6 +21,11 @@
 .form-header {
     text-align: center;
     margin-bottom: 20px;
+    max-width: fit-content;
+    max-height: fit-content;
+    position: relative;
+    left: 50px;
+    top: -30px;
 }
 
 .form-header h2 {

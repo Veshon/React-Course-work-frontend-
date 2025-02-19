@@ -60,12 +60,12 @@ export function Dashboard() {
 
                 {/* Items Section */}
                 <section className="section">
-                    <h2 className="section-title">Items</h2>
+                    <h2 className="section-title">Books</h2>
                     <div className="table-container">
                         <table className="table">
                             <thead className="table-header">
                             <tr>
-                                <th className="table-header-cell">Description</th>
+                                <th className="table-header-cell">Book Name</th>
                                 <th className="table-header-cell">Price</th>
                                 <th className="table-header-cell">Quantity</th>
                             </tr>
@@ -74,7 +74,7 @@ export function Dashboard() {
                             {items.map((item: Item) => (
                                 <tr key={item.description} className="table-row">
                                     <td className="table-cell">{item.description}</td>
-                                    <td className="table-cell">${item.price}</td>
+                                    <td className="table-cell">$ {item.price}</td>
                                     <td className="table-cell">{item.qty}</td>
                                 </tr>
                             ))}
