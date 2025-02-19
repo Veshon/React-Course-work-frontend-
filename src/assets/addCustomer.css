@@ -29,14 +29,14 @@
     top: -30px;
 }
 
-.form-header h2 {
+.form-header h2{
     font-size: 24px;
     font-weight: bold;
     position: relative;
 }
 
 .form-header h2::before {
-    content: "📖"; /* Book icon */
+    /*content: "📖"; !* Book icon *!*/
     position: absolute;
     left: -30px;
     font-size: 28px;

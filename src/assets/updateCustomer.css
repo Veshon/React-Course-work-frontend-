@@ -23,14 +23,24 @@
     margin-bottom: 20px;
 }
 
-.form-header h2 {
+.form-header-update h2 {
     font-size: 24px;
     color: #333;
+    position: relative;
+    max-width: fit-content;
+    max-height: fit-content;
+    left: 120px;
+    top: -30px;
 }
 
-.form-header p {
+.form-header-update p {
     color: #666;
     font-size: 14px;
+    position: relative;
+    max-width: fit-content;
+    max-height: fit-content;
+    left: 120px;
+    top: -30px;
 }
 
 /* Form Fields */
@@ -128,3 +138,4 @@
     color: #666;
     margin-bottom: 15px;
 }
+

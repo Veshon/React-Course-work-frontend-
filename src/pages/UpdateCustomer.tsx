@@ -3,7 +3,7 @@ import { useState } from "react";
 import { AppDispatch } from "../store/store.tsx";
 import { useDispatch } from "react-redux";
 import { updateCustomer } from "../reducers/CustomerReducer.ts";
-import "../assets/updateCustomer.css"; // Import CSS for styling
+import "../assets/updateCustomer.css";
 
 export function UpdateCustomer() {
     const navigate = useNavigate();
@@ -24,7 +24,7 @@ export function UpdateCustomer() {
     return (
         <div className="container">
             <div className="form-card">
-                <header className="form-header">
+                <header className="form-header-update">
                     <h2>Update Customer</h2>
                     <p>Modify customer details below.</p>
                 </header>
