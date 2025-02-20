@@ -22,18 +22,18 @@ export function DeleteItem() {
         <div className="wrapper">
             <div className="card">
                 <header className="card-header">
-                    <h2>Delete Item</h2>
-                    <p>Enter the item description to delete.</p>
+                    <h2>Delete Book</h2>
+                    <p>Enter the book description to delete.</p>
                 </header>
 
                 <div className="input-group">
-                    <label htmlFor="description">Item Description</label>
+                    <label htmlFor="description">Book Description</label>
                     <input
                         id="description"
                         type="text"
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
-                        placeholder="Enter item description"
+                        placeholder="Enter Book Description"
                     />
                 </div>
 
@@ -47,7 +47,7 @@ export function DeleteItem() {
                 <div className="popup-overlay">
                     <div className="popup">
                         <h3>Confirm Deletion</h3>
-                        <p>Are you sure you want to delete this item?</p>
+                        <p>Are you sure you want to delete this book?</p>
                         <div className="popup-buttons">
                             <button className="btn-cancel" onClick={() => setShowPopup(false)}>Cancel</button>
                             <button className="btn-delete" onClick={handleDelete}>Delete</button>

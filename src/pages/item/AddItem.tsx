@@ -24,18 +24,18 @@ export function AddItem() {
         <div className="addItem-container">
             <div className="addItem-card">
                 <header className="addItem-header">
-                    <h2>Add New Item</h2>
-                    <p>Fill in the details below to add a new item to inventory.</p>
+                    <h2>Add New Book</h2>
+                    <p>Fill in the details below to add a new book to inventory.</p>
                 </header>
 
                 <div className="addItem-form">
-                    <label htmlFor="description">Item Description</label>
+                    <label htmlFor="description">Book Description</label>
                     <input
                         id="description"
                         type="text"
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
-                        placeholder="Enter item description"
+                        placeholder="Enter Book Description"
                     />
 
                     <label htmlFor="price">Price ($)</label>
@@ -59,7 +59,7 @@ export function AddItem() {
 
                 <div className="addItem-actions">
                     <button className="cancel-btn" onClick={() => navigate("/")}>Cancel</button>
-                    <button className="submit-btn" onClick={handleSubmit}>Add Item</button>
+                    <button className="submit-btn" onClick={handleSubmit}>Add Book</button>
                 </div>
             </div>
         </div>

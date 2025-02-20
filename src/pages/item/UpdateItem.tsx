@@ -26,18 +26,18 @@ export function UpdateItem() {
         <div className="wrapper">
             <div className="update-card">
                 <header className="card-header-update">
-                    <h2>Update Item</h2>
-                    <p>Modify the item details and save changes.</p>
+                    <h2>Update Book</h2>
+                    <p>Modify the book details and save changes.</p>
                 </header>
 
                 <div className="input-group">
-                    <label htmlFor="description">Item Description</label>
+                    <label htmlFor="description">Book Description</label>
                     <input
                         id="description"
                         type="text"
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
-                        placeholder="Enter item description"
+                        placeholder="Enter Book Description"
                     />
                 </div>
 
@@ -73,7 +73,7 @@ export function UpdateItem() {
                 <div className="popup-overlay">
                     <div className="popup">
                         <h3>Confirm Update</h3>
-                        <p>Are you sure you want to update this item?</p>
+                        <p>Are you sure you want to update this book?</p>
                         <div className="popup-buttons">
                             <button className="btn-cancel" onClick={() => setShowPopup(false)}>Cancel</button>
                             <button className="btn-update" onClick={handleUpdate}>Update</button>
