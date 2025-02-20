@@ -65,7 +65,7 @@ export function Dashboard() {
                         <table className="table">
                             <thead className="table-header">
                             <tr>
-                                <th className="table-header-cell">Book Name</th>
+                                <th className="table-header-cell">Book Description</th>
                                 <th className="table-header-cell">Price</th>
                                 <th className="table-header-cell">Quantity</th>
                             </tr>
