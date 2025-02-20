@@ -18,14 +18,14 @@
 }
 
 /* Header */
-.form-header {
+.form-header-delete {
     text-align: center;
     margin-bottom: 20px;
     max-width: fit-content;
     max-height: fit-content;
     position: relative;
-    left: 50px;
-    top: -30px;
+    left: 25px;
+    top: -20px;
 }
 
 .form-header h2 {

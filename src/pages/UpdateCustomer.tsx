@@ -24,7 +24,7 @@ export function UpdateCustomer() {
     return (
         <div className="container">
             <div className="form-card">
-                <header className="form-header-update">
+                <header className="form-header-cus-update">
                     <h2>Update Customer</h2>
                     <p>Modify customer details below.</p>
                 </header>

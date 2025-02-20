@@ -21,7 +21,7 @@ export function DeleteCustomer() {
     return (
         <div className="container">
             <div className="form-card">
-                <header className="form-header">
+                <header className="form-header-delete">
                     <h2>Delete Customer</h2>
                     <p>Enter the email of the customer to delete.</p>
                 </header>

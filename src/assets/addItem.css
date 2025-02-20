@@ -1,0 +1,107 @@
+/* Full-page background styling */
+.addItem-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1569728723358-d1a317aa7fba?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+}
+
+/* Card container */
+.addItem-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+/* Header section */
+.addItem-header h2 {
+    font-size: 22px;
+    color: #444;
+    margin-bottom: 8px;
+    max-width: fit-content;
+    max-height: fit-content;
+    position: relative;
+    left: 100px;
+    top: -20px;
+}
+
+.addItem-header p {
+    font-size: 14px;
+    color: #777;
+    max-width: fit-content;
+    max-height: fit-content;
+    position: relative;
+    left: 10px;
+    top: -20px;
+}
+
+/* Form styling */
+.addItem-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.addItem-form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.addItem-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    background: #f8f9fa;
+    transition: 0.3s;
+}
+
+.addItem-form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+/* Button styling */
+.addItem-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.cancel-btn,
+.submit-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 48%;
+}
+
+.cancel-btn {
+    background: #ccc;
+    color: #333;
+}
+
+.cancel-btn:hover {
+    background: #999;
+}
+
+.submit-btn {
+    background: #007bff;
+    color: white;
+}
+
+.submit-btn:hover {
+    background: #0056b3;
+}
