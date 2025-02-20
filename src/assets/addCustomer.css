@@ -5,6 +5,8 @@
     align-items: center;
     height: 100vh;
     background: url('https://plus.unsplash.com/premium_photo-1706061121923-e2aef3d28939?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    position: relative;
+    top: -32px;
 }
 
 /* Card-style form */
