@@ -16,11 +16,11 @@ export function Navigation() {
                         </ul>
                     </li>
                     <li className="dropdown">
-                        <span className="nav-link">Items ▼</span>
+                        <span className="nav-link">Books ▼</span>
                         <ul className="dropdown-menu">
-                            <li><Link to="/addItem" className="nav-link">Add Item</Link></li>
-                            <li><Link to="/deleteItem" className="nav-link">Delete Item</Link></li>
-                            <li><Link to="/updateItem" className="nav-link">Update Item</Link></li>
+                            <li><Link to="/addItem" className="nav-link">Add Book</Link></li>
+                            <li><Link to="/deleteItem" className="nav-link">Delete Book</Link></li>
+                            <li><Link to="/updateItem" className="nav-link">Update Book</Link></li>
                         </ul>
                     </li>
                 </ul>
