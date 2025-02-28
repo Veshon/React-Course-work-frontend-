@@ -1,0 +1,120 @@
+/* Centering the form */
+.employeeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://plus.unsplash.com/premium_photo-1677171748347-f1044312dd53?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    position: relative;
+    top: -32px;
+}
+
+/* Card-style form */
+.form-card {
+    background: rgba(255, 250, 240, 0.95); /* Soft paper-like effect with transparency */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Header */
+.form-header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5a3e2b;
+    max-width: fit-content;
+    max-height: fit-content;
+    position: relative;
+    left: 20px;
+    top: -20px;
+}
+
+.form-header h2{
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+}
+
+.form-header h2::before {
+    /*content: "📖"; !* Book icon *!*/
+    position: absolute;
+    left: -30px;
+    font-size: 28px;
+}
+
+/* Error message */
+.error-message {
+    background-color: #fddede;
+    color: #a32d2d;
+    padding: 10px;
+    border: 1px solid #a32d2d;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Form fields */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #5a3e2b;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid #b29477;
+    border-radius: 5px;
+    font-size: 14px;
+    background: #faf3e0 ;
+    padding-left: 40px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #c08552;
+    box-shadow: 0 0 5px rgba(192, 133, 82, 0.5);
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cancel-btn, .submit-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cancel-btn {
+    background: #b29477;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background: #8a5a44;
+}
+
+.submit-btn {
+    background: #c08552;
+    color: white;
+}
+
+.submit-btn:hover {
+    background: #a36b3c;
+}

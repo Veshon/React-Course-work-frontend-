@@ -23,6 +23,14 @@ export function Navigation() {
                             <li><Link to="/updateItem" className="nav-link">Update Book</Link></li>
                         </ul>
                     </li>
+                    <li className="dropdown">
+                        <span className="nav-link">Employees ▼</span>
+                        <ul className="dropdown-menu">
+                            <li><Link to="/addEmployee" className="nav-link">Add Employee</Link></li>
+                            <li><Link to="/deleteEmployee" className="nav-link">Delete Employee</Link></li>
+                            <li><Link to="/updateEmployee" className="nav-link">Update Employee</Link></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </header>

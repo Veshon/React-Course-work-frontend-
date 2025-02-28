@@ -1,29 +1,41 @@
-import { Customer } from "../models/Customer.ts";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch } from "../store/store.tsx";
 import { useEffect } from "react";
 import { getCustomers } from "../reducers/CustomerReducer.ts";
 import { getItems } from "../reducers/ItemReducer.ts";
+import { getEmployee } from "../reducers/EmployeeReducer.ts"; // Import Employee action
+import { Customer } from "../models/Customer.ts";
 import { Item } from "../models/Item.ts";
-import "../assets/style.css"; // Import the custom CSS file
+import { Employee } from "../models/Employee.ts";
+import "../assets/style.css";
 
 export function Dashboard() {
     const dispatch = useDispatch<AppDispatch>();
 
     const customers = useSelector((state) => state.customer);
     const items = useSelector((state) => state.item);
+    const employees = useSelector((state) => state.employee);
 
+    // Fetch customers
     useEffect(() => {
         if (customers.length === 0) {
             dispatch(getCustomers());
         }
     }, [dispatch, customers.length]);
 
+    // Fetch items
     useEffect(() => {
         if (items.length === 0) {
             dispatch(getItems());
         }
     }, [dispatch, items.length]);
+
+    // Fetch employees (This was missing)
+    useEffect(() => {
+        if (employees.length === 0) {
+            dispatch(getEmployee());  // Dispatch the getEmployee action
+        }
+    }, [dispatch, employees.length]);
 
     return (
         <div className="dashboard">
@@ -76,6 +88,31 @@ export function Dashboard() {
                                     <td className="table-cell">{item.description}</td>
                                     <td className="table-cell">$ {item.price}</td>
                                     <td className="table-cell">{item.qty}</td>
+                                </tr>
+                            ))}
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                {/* Employee Section (Fixed) */}
+                <section className="section">
+                    <h2 className="section-title">Employees</h2>
+                    <div className="table-container">
+                        <table className="table">
+                            <thead className="table-header">
+                            <tr>
+                                <th className="table-header-cell">Name</th>
+                                <th className="table-header-cell">Email</th>
+                                <th className="table-header-cell">Position</th> {/* Fixed Label */}
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {employees.map((employee: Employee) => (
+                                <tr key={employee.email} className="table-row">
+                                    <td className="table-cell">{employee.name}</td>
+                                    <td className="table-cell">{employee.email}</td>
+                                    <td className="table-cell">{employee.position}</td> {/* Fixed Field */}
                                 </tr>
                             ))}
                             </tbody>

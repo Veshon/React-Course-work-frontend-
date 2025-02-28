@@ -9,7 +9,6 @@ const api = axios.create({
     baseURL: "http://localhost:3000/customer",
 });
 
-// Save customer action
 export const saveCustomer = createAsyncThunk(
     "customer/saveCustomer",
     async (customer: Customer) => {
@@ -22,7 +21,6 @@ export const saveCustomer = createAsyncThunk(
     }
 );
 
-// Delete customer action
 export const deleteCustomer = createAsyncThunk(
     "customer/deleteCustomer",
     async (id: string) => {
@@ -35,7 +33,6 @@ export const deleteCustomer = createAsyncThunk(
     }
 );
 
-// Update customer action
 export const updateCustomer = createAsyncThunk(
     "customer/updateCustomer",
     async (customer: Customer) => {
@@ -48,7 +45,6 @@ export const updateCustomer = createAsyncThunk(
     }
 );
 
-// Get customers action
 export const getCustomers = createAsyncThunk(
     "customer/getCustomers",
     async () => {
