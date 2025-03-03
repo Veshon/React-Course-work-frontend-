@@ -15,8 +15,8 @@ export function UpdateEmployee() {
     const [showModal, setShowModal] = useState(false);
 
     function handleUpdate() {
-        const updatedEmployee = {name, email, position }; // Ensure you have an `id`
-        dispatch(updateEmployee(updatedEmployee)); // Correct function call
+        const updatedEmployee = {name, email, position };
+        dispatch(updateEmployee(updatedEmployee));
         setShowModal(false);
         navigate("/");
     }

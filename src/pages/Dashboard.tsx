@@ -95,7 +95,7 @@ export function Dashboard() {
                     </div>
                 </section>
 
-                {/* Employee Section (Fixed) */}
+                {/* Employee Section*/}
                 <section className="section">
                     <h2 className="section-title">Employees</h2>
                     <div className="table-container">
@@ -104,7 +104,7 @@ export function Dashboard() {
                             <tr>
                                 <th className="table-header-cell">Name</th>
                                 <th className="table-header-cell">Email</th>
-                                <th className="table-header-cell">Position</th> {/* Fixed Label */}
+                                <th className="table-header-cell">Position</th>
                             </tr>
                             </thead>
                             <tbody>
